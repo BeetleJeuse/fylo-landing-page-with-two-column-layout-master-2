@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --grey-blue: hsl(238, 22%, 44%);
+    --light-blue: hsl(224, 93%, 58%);
+    --green: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font);
+}
+.sec-1, header{
+    padding: 1.5rem;
+}
+
+img{
+    width: 100%;
+}
+h2, h3, button{
+    font-family: var(--heading-font);
+}
+header, header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    margin-bottom: 4rem;
+}
+li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: var(--grey-blue);
+}
+header img{
+    width: 100px;
+}
+.sec-1 h1{
+    margin: 1em 0;
+}
+.sec-1{
+    text-align: center;
+}
+.sec-1 p{
+    margin-bottom: 1.5rem;
+}
+form input{
+    min-height: 3.2em;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid hsl(0, 0%, 55%);
+    margin-bottom: 1rem;
+}
+input::placeholder{
+    color: var(--light-gray);
+    font-family: var(--heading-font);
+    padding-left: 10px;
+}
+form button{
+    width: 100%;
+    background-color: var(--light-blue);
+    color: var(--light-grayish-blue);
+    padding: 0.7em;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5rem;
+}
+.sec-2 .content{
+    background-color: var(--light-grayish-blue);
+    padding: 1.5rem;
+
+}
+.sec-2 img{
+    display: block;
+}
+h2{
+    font-size: 20px;
+    margin: 6rem 0 1.5rem;
+    text-align: center;
+}
+.sec-2 p{
+    color: var(--grey-blue);
+    font-size: 17px;
+    margin: 1.2rem 0;
+}
+.sec-2-text p{
+    margin-bottom: 2rem;
+}
+.fylo-link{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.fylo-link img{
+    width: 20px;
+    margin-left: 5px;
+}
+.fylo-link a{
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 3px;
+}
+.quote{
+    width: 85%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2rem 10px 1rem 2rem;
+    border-radius: 7px;
+    margin-bottom: 3rem;
+}
+.quote >p{
+    font-size: 15px;
+    line-height: 26px;
+}
+.quote >img{
+    width: 20px;
+}
+.profile-wrap img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.profile-wrap{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: -20px;
+}
+.profile-wrap span{
+    display: block;
+    font-size: 13px;
+}
+.profile-wrap p{
+    font-size: 15px;
+    padding-top: 7px;
+}
+.sec-3{
+    background-color: var(--grey-blue);
+    padding: 3.5rem 4rem;
+    color: var(--light-grayish-blue);
+    text-align: center;
+}
+.sec-3 p{
+    margin: 1.5rem 0;
+}
+.sec-3 h3{
+    font-size: 20px;
+}
+form input, form button{
+    width: 90%;
+    margin: 5px auto;
+}
+footer{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 4rem 2rem;
+    font-size: 18px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: var(--light-blue);
+}
+footer li{
+    list-style-type: none;
+    margin: 1rem 0;
+}
+footer .info{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+footer .info img{
+    width: 22px;
+    margin-right: 1em;
+}
+footer>img{
+    width: 200px;
+}
+.info-wrap{
+    margin: 1.5rem 0 2rem;
+}
+footer .social-icons{
+    display: flex;
+    margin: 2rem auto;
+}
+.i{
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+.i:hover{
+    border: 1px solid hsl(224, 93%, 68%);
+    color: hsl(224, 93%, 68%);
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(224, 93%, 68%);
+    cursor: pointer;
+}
+@media screen and (min-width: 900px){
+    header, .sec-1{
+        margin: 1.5rem 3rem;
+    }
+    .sec-1{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        align-items: center;
+    }
+    .sec-2 .content{
+        padding: 0 3.2rem;
+    }
+    .sec-1 h1{
+        font-family: var(--heading-font);
+        font-size: 38px;
+        margin-bottom: 1rem;
+    }
+    .sec-1 img{
+        width: 50%;
+    }
+    .sec-2 .content>img{
+        width: 45%;
+        height: 40%
+    }
+    form input{
+        width: 55%;
+    }
+    form button{
+        width: 30%;
+    }
+    .sec-2 .content{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: -3rem;
+    }
+    .sec-2 h2{
+        font-size: 32px;
+    }
+    .sec-2-text p:not(.quote p){
+        width: 70%;
+    }
+    .sec-2 h2, .fylo-link{
+        text-align: left;
+        justify-content: left;
+    }
+    .quote{
+        width: 60%;
+        margin: 0 0 2.5rem;
+        padding: 1.2rem;
+    }
+    .quote p{
+        margin-bottom: 1em;
+    }
+    .sec-3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .sec-3 div{
+        width: 45%;
+    }
+    .sec-3 form{
+        width: 40%;
+    }
+    .sec-3 form input{
+        width: 90%;
+    }
+    .sec-3 button{
+        width: 40%;
+        font-size: 14px;
+    }
+    footer div{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .info-wrap{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .icon-text-2{
+        width: 100%;
+    }
+    footer .social-icons{
+        margin: 0;
+    }
+    .footer-wrap{
+        width: 85%;
+        padding-left: 2rem;
+    }
+    footer>img{
+        padding-left: 2rem;
+    }
+    .fylo-link img{
+        display: inline;
+        
+    }
+}
